@@ -84,7 +84,7 @@ public class Problem1 {
         students.add(new Student(15, "Yash Thakur", 20, Grade.C, "Electrical"));
 
 
-        // Sort students by branch, then by descending grade
+        // sort students by branch, then by descending grade
         students.sort(
                 Comparator.comparing(Student::getBranch)
                         .thenComparing(Comparator.comparing(Student::getGrade).reversed())
@@ -95,12 +95,13 @@ public class Problem1 {
             stu.studentDetail();
         }
 
-        // Group students by branch using a Map<String, List<Student>>.
+        // group students by branch using a Map<String, List<Student>>.
         for (Student s : students) {
                groupedByBranch
                       .computeIfAbsent(s.getBranch(), k -> new ArrayList<>())
                       .add(s);
         }
+
 
         System.out.println("=== Students Grouped by Branch ===");
         for (String branch : groupedByBranch.keySet()) {

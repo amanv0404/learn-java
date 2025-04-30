@@ -1,3 +1,4 @@
+
 //Problem 3: Department Directory with Sorted Employees (Map, List)
 //Maintain a Map<String, List<Employee>> where the key is department name.
 //• Sort each department’s employees by salary descending.
@@ -42,6 +43,7 @@ class Employee{
         System.out.println("Name: "+name);
         System.out.println("Department: "+department);
         System.out.println("Salary: "+salary);
+        System.out.println("----------------");
     }
 }
 public class Problem3 {
@@ -61,6 +63,7 @@ public class Problem3 {
                 new Employee(10, "Manav Singh", "HR", 81000)
         );
 
+
         // map employees by department
         Map<String, List<Employee>> departmentMap = new HashMap<>();
         for (Employee emp : allEmployees) {
@@ -68,6 +71,8 @@ public class Problem3 {
                     .computeIfAbsent(emp.getDepartment(), k -> new ArrayList<>())
                     .add(emp);
         }
+
+
 
         // sort each department's employees by salary descending
         for (List<Employee> list : departmentMap.values()) {

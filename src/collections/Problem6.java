@@ -1,3 +1,5 @@
+
+
 //Problem 6: Library Catalog (Map<String, Set<Book>>)
 //Each genre maps to a set of Book objects.
 //• Prevent duplicate books using equals and hashCode.
@@ -45,6 +47,8 @@ class Book {
         return Objects.hash(title, author, year);
     }
 
+
+
     public void printBook() {
         System.out.println(year + " - \"" + title + "\" by " + author);
     }
@@ -56,15 +60,16 @@ public class Problem6 {
 
         Map<String, Set<Book>> library = new HashMap<>();
 
-        addBook(library, "Science Fiction", new Book("Dune", "Frank Herbert", 1965));
-        addBook(library, "Science Fiction", new Book("Neuromancer", "William Gibson", 1984));
-        addBook(library, "Science Fiction", new Book("Foundation", "Isaac Asimov", 1951));
-        addBook(library, "Fantasy", new Book("The Hobbit", "J.R.R. Tolkien", 1937));
-        addBook(library, "Fantasy", new Book("The Name of the Wind", "Patrick Rothfuss", 2007));
-        addBook(library, "Fantasy", new Book("A Game of Thrones", "George R.R. Martin", 1996));
-        addBook(library, "Mystery", new Book("Gone Girl", "Gillian Flynn", 2012));
-        addBook(library, "Mystery", new Book("The Girl with the Dragon Tattoo", "Stieg Larsson", 2005));
-        addBook(library, "Mystery", new Book("The Hound of the Baskervilles", "Arthur Conan Doyle", 1902));
+        addBook(library, "Historical Fiction", new Book("Train to Pakistan", "Khushwant Singh", 1956));
+        addBook(library, "Literary Fiction", new Book("The God of Small Things", "Arundhati Roy", 1997));
+        addBook(library, "Literary Fiction", new Book("A Suitable Boy", "Vikram Seth", 1993));
+        addBook(library, "Mythological Fiction", new Book("The Immortals of Meluha", "Amish Tripathi", 2010));
+        addBook(library, "Mythological Fiction", new Book("Palace of Illusions", "Chitra Banerjee Divakaruni", 2008));
+        addBook(library, "Thriller", new Book("The White Tiger", "Aravind Adiga", 2008));
+        addBook(library, "Fantasy", new Book("Karna's Wife", "Kavita Kane", 2013));
+        addBook(library, "Drama", new Book("Five Point Someone", "Chetan Bhagat", 2004));
+        addBook(library, "Drama", new Book("The Zoya Factor", "Anuja Chauhan", 2008));
+
 
         printBooksByGenre(library);
     }
@@ -80,6 +85,7 @@ public class Problem6 {
         for (String genre : library.keySet()) {
             System.out.println("\nGenre: " + genre);
             Set<Book> books = library.get(genre);
+
             books.stream()
                     .sorted(Comparator.comparingInt(Book::getYear))
                     .forEach(Book::printBook);
