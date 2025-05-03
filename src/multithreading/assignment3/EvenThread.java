@@ -1,4 +1,4 @@
-package multithreading.assignment1;
+package multithreading.assignment3;
 
 public class EvenThread extends Thread{
 
@@ -20,7 +20,6 @@ public class EvenThread extends Thread{
                         Thread.currentThread().interrupt();
                     }
                 }
-
                 System.out.println(i+ " Even Thread");
                 resource.setOddTurn(true);
                 resource.getLock().notify();

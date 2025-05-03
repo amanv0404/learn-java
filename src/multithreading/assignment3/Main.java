@@ -8,7 +8,7 @@
 //        - Output must be in order: 1 2 3 4 5 ... 100
 //        - Use `wait()` and `notify()` for coordination
 
-package multithreading.assignment1;
+package multithreading.assignment3;
 
 public class Main {
 

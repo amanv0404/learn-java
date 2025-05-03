@@ -1,4 +1,4 @@
-package multithreading.assignment1;
+package multithreading.assignment3;
 
 public class OddThread extends Thread {
 

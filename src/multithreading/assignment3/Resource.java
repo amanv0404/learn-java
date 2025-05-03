@@ -1,4 +1,4 @@
-package multithreading.assignment1;
+package multithreading.assignment3;
 
 public class Resource {
     private final Object lock = new Object();
