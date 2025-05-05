@@ -55,7 +55,6 @@ class Account{
 
 }
 
-
 class Bank{
     Account account;
 }
