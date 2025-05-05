@@ -13,6 +13,7 @@ public class Logger {
         worker = new Thread(()->{
 //            While the logger is not shut down, or there are still logs waiting to be printed
 //            Keep looping.
+
            while(running.get() || !queue.isEmpty()){
                try{
                    flushLogs(); // print whatever is in the queue
