@@ -1,0 +1,9 @@
+INFO Server started at 08:00AM
+INFO Connected to database
+WARNING Memory usage high
+INFO Scheduled job executed
+ERROR Database connection lost
+INFO Attempting to reconnect
+ERROR Reconnection failed
+WARNING CPU temperature rising
+INFO Shutdown initiated
