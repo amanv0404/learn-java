@@ -1,0 +1,41 @@
+===== backup.txt =====
+This is from source file
+
+===== notes.txt =====
+This is my first file in Java.
+
+===== paragraph.txt =====
+Java is a high-level, object-oriented programming language used to build applications across platforms—from web and mobile apps to enterprise software. It is known for its Write Once, Run Anywhere capability, meaning code written in Java can run on any device that supports the Java Virtual Machine (JVM).
+
+===== grades.txt =====
+Aman 85
+Yash 72
+Spiderman 38
+Ironman 95
+Loki
+
+===== source.txt =====
+This is from source file
+
+===== input.txt =====
+Hello World!
+
+===== log.txt =====
+Last updated on 2025-05-08
+
+===== summary.txt =====
+Log Summary Report
+------------------
+Total log entries: 9
+ERROR entries: 2 (22.22%)
+WARNING entries: 2 (22.22%)
+
+===== output.txt =====
+Hello World!
+
+===== data.txt =====
+Hello
+Hello
+Hello
+Hello
+
